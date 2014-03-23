@@ -1,0 +1,99 @@
+
+a {
+    color: #009bdc;
+}
+
+.si i {
+	color: #009bdc;
+}
+
+strong {
+font-weight: 400;
+}
+
+h4{
+	color: #1d7ccd;
+	line-height: 1.5em;
+}
+h3{
+	line-height: 1.2em;
+	font-weight: 300;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: #ffffff;
+background-color: #009bdc;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+color: #009bdc;
+}
+
+.btn-theme {
+  background-color: #009bdc;
+}
+
+.tabbable .nav-stacked > li:active, li:focus, li.active h4 {
+	color: #009bdc;
+}
+
+#cta-bar:hover {
+	background: #009bdc;
+}
+
+p.capitalize:first-letter {
+	background: #009bdc;
+}
+
+.team-info {
+  background: #009bdc;
+}
+
+#black i {
+	color: #009bdc;
+}
+
+.progress-bar-theme {
+  background-color: #009bdc;
+}
+
+.team-stat i {
+	color: #009bdc;
+}
+
+.pricing-table-plan {
+	border-top: 4px solid #009bdc;
+}
+
+.blog-post blockquote {
+  border-left: 4px solid #009bdc;
+}
+
+
+#headerwrap{
+background: #009bdc;
+background-image: none;
+}
+.service-list{
+	list-style-type: none;
+}
+.service-list li{
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.service-list a{
+	margin-bottom: 10px;
+}
+
+
+#row-services{
+	background:white;border-radius:15px;
+}
+
+.container p{
+	color:#231919;
+	font-weight: 400;
+}
+

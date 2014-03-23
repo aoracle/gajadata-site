@@ -1,0 +1,63 @@
+{% include 'header.html' %}
+	<div id="black">
+		<div class="container mts">
+			<div class="row mt centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h1>Contact</h1>
+					<hr>
+					<h4>Where in the world are we?</h4>
+				</div>
+
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /black -->
+
+
+	<div class="container">
+    	<div class="row mt">
+    		<div class="alert alert-danger" id="contact-error" style="display:none;">
+
+    		</div>
+    		<div class="col-lg-7">
+				<form role="form">
+				  <div class="form-group">
+				    <input type="name" class="form-control" id="contact-name" placeholder="Your Name">
+				    <br>
+				  </div>
+				  <div class="form-group">
+				    <input type="email" class="form-control" id="contact-email" placeholder="Enter email">
+				    <br>
+				  </div>
+				  <div class="form-group">
+				    <input type="text" class="form-control" id="contact-subject" placeholder="Subject">
+				    <br>
+				  </div>
+				  <textarea class="form-control" rows="6" id="contact-data" placeholder="What do you want to discuss?"></textarea>
+				    <br>
+				  <button type="button" id="contact-submit" class="btn btn-primary btn-lg">SUBMIT</button>
+				</form>
+    		</div>
+
+    		<div class="col-lg-4 col-lg-offset-1">
+    			<h4>Address</h4>
+    			<p>
+					1 Vista Montana 4303,<br/>
+					95134<br/>
+					San Jose, USA.<br/>
+    			</p>
+
+    			<h4>Contact Information</h4>
+    			<p>
+					<i class="fa fa-mobile"></i>+1 310-904-8198<br/>
+					<i class="fa fa-envelope-o"></i>contact@gajadata.com
+    			</p>
+
+    			<h4>Social Links</h4>
+    			<p class="lead spacing"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-youtube"></i><a href="#"><i class="fa fa-instagram"></i></p>
+
+    		</div><!-- /col-lg-4 -->
+
+		</div><! --/row -->
+	</div><!-- /container -->
+
+{% include 'footer.html' %}

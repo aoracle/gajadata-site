@@ -1,0 +1,90 @@
+	<div id="f">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-3">
+					<h4>DATABASE CONSULTING</h4>
+			              <p><a href="sql-services"> <i class="fa fa-angle-right"></i> SQL Services</a><br/>
+			              <a href="nosql-services"><i class="fa fa-angle-right"></i> NoSQL Systems</a><br/>
+			              </p>
+				</div>
+
+
+				<div class="col-lg-3">
+					<h4>BIG DATA & DATA ANALYTICS</h4>
+					<p><a href="bigdata-consulting"> <i class="fa fa-angle-right"></i> Big Data Consulting</a><br/>
+			              <a href="data-analytics"><i class="fa fa-angle-right"></i> Data Analytics, Warehouse</a><br/>
+			              <a href="data-architecture"><i class="fa fa-angle-right"></i> Data Architecture</a>
+			         </p>
+				</div>
+
+
+				<div class="col-lg-3">
+					<h4>About Gajadata</h4>
+					<p><a href="why-gajadata"> <i class="fa fa-angle-right"></i> Why Gajadata?</a><br/>
+			              <a href="clients"><i class="fa fa-angle-right"></i> Clients</a><br/>
+			              <a href="careers"><i class="fa fa-angle-right"></i> Careers</a>
+			         </p>
+				</div>
+
+
+				<div class="col-lg-3">
+					<h4>Get In Touch</h4>
+					<p>
+			              <i class="fa fa-phone"></i> (310) 904-8198 <br>
+			              <i class="fa fa-envelope-o"></i> contact@gajadata.com
+			            </p>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/retina.js"></script>
+	<script>
+		$(window).scroll(function() {
+			$('.si').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+
+	    $('#myTab a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+
+		$('#contact-submit').click(function(){
+
+			var email=$('#contact-email').val();
+			var name=$('#contact-name').val();
+			var subject=$('#contact-subject').val();
+			var data=$('#contact-data').val();
+			var vals={name:name,email:email,subject:subject,data:data}
+			$.post('contact',vals,function(data){
+				if(data=='sent'){
+
+					$('#contact-error').html('<h4>Mail successfully sent, You will be contacted soon.</h4>');
+					$('#contact-error').attr('class', 'alert alert-info');
+					$('#contact-error').show();
+
+
+				}else{
+
+					$('#contact-error').html('<h4>Cannot send email. Please try again.</h4>');
+					$('#contact-error').show();
+
+				}
+			})
+
+		});
+	</script>
+  </body>
+</html>
