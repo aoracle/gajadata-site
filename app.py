@@ -74,7 +74,7 @@ def contact_post():
 		s = smtplib.SMTP()
 		s.connect('smtp.gmail.com',587)
 		s.starttls()
-		s.login('contact@gajadata.com', 'darkshadow')
+		s.login('contact@gajadata.com', '*******')
 		if name and email and data:
 			s.sendmail(sender, receivers, message)
 			return "sent"
