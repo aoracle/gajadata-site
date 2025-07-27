@@ -1,0 +1,9 @@
+# Security - Never commit PEM files
+*.pem
+
+# OS files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
