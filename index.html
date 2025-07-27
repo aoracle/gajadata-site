@@ -19,21 +19,23 @@
         }
 
         :root {
-            --primary-color: #000000;
-            --secondary-color: #666666;
+            --primary-color: #FFFFFF;
+            --secondary-color: #A0A0A0;
             --accent-color: #0066FF;
-            --bg-light: #FAFAFA;
-            --border-color: #E5E5E5;
-            --text-muted: #999999;
-            --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-            --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --bg-dark: #000000;
+            --bg-dark-secondary: #111111;
+            --bg-dark-card: #1A1A1A;
+            --border-color: #2A2A2A;
+            --text-muted: #666666;
+            --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
             color: var(--primary-color);
-            background: #FFFFFF;
+            background: var(--bg-dark);
             font-size: 16px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -47,7 +49,7 @@
 
         /* Header */
         header {
-            background: #FFFFFF;
+            background: var(--bg-dark);
             position: fixed;
             top: 0;
             width: 100%;
@@ -107,7 +109,7 @@
 
         .cta-btn {
             background: var(--primary-color);
-            color: white;
+            color: var(--bg-dark);
             padding: 12px 24px;
             border-radius: 6px;
             text-decoration: none;
@@ -126,7 +128,7 @@
         .hero {
             padding: 160px 0 120px;
             text-align: center;
-            background: #FFFFFF;
+            background: var(--bg-dark);
             position: relative;
         }
 
@@ -163,7 +165,7 @@
 
         .hero-cta {
             background: var(--primary-color);
-            color: white;
+            color: var(--bg-dark);
             padding: 16px 32px;
             border-radius: 6px;
             text-decoration: none;
@@ -186,7 +188,7 @@
         }
 
         .section-alt {
-            background: var(--bg-light);
+            background: var(--bg-dark-secondary);
         }
 
         .section-title {
@@ -215,7 +217,7 @@
         }
 
         .feature-card {
-            background: white;
+            background: var(--bg-dark-card);
             padding: 40px;
             border-radius: 12px;
             border: 1px solid var(--border-color);
@@ -240,7 +242,7 @@
             justify-content: center;
             margin-bottom: 24px;
             font-size: 24px;
-            color: white;
+            color: var(--bg-dark);
         }
 
         .feature-card h3 {
@@ -274,7 +276,7 @@
             width: 64px;
             height: 64px;
             background: var(--primary-color);
-            color: white;
+            color: var(--bg-dark);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -313,8 +315,8 @@
 
         /* CTA Section */
         .cta-section {
-            background: var(--primary-color);
-            color: white;
+            background: var(--bg-dark-secondary);
+            color: var(--primary-color);
             text-align: center;
             padding: 100px 0;
             position: relative;
@@ -358,15 +360,15 @@
         }
 
         .btn-primary {
-            background: white;
-            color: var(--primary-color);
+            background: var(--primary-color);
+            color: var(--bg-dark);
             padding: 16px 32px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             font-size: 16px;
             transition: all 0.2s ease;
-            border: 2px solid white;
+            border: 2px solid var(--primary-color);
         }
 
         .btn-primary:hover {
@@ -376,9 +378,9 @@
 
         .btn-secondary {
             background: transparent;
-            color: white;
+            color: var(--primary-color);
             padding: 16px 32px;
-            border: 2px solid white;
+            border: 2px solid var(--primary-color);
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
@@ -387,8 +389,8 @@
         }
 
         .btn-secondary:hover {
-            background: white;
-            color: var(--primary-color);
+            background: var(--primary-color);
+            color: var(--bg-dark);
         }
 
         /* Contact Section */
@@ -418,10 +420,11 @@
 
         /* Footer */
         footer {
-            background: var(--primary-color);
-            color: white;
+            background: var(--bg-dark);
+            color: var(--primary-color);
             padding: 40px 0;
             text-align: center;
+            border-top: 1px solid var(--border-color);
         }
 
         .footer-bottom {
